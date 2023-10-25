@@ -10,6 +10,13 @@ export default {
   components: {
     HomeView,
   },
+  // mounted() {
+  //   let _this = this;
+  //   window.onresize = function () {
+  //     _this.$store.state.screenWidth = document.documentElement.clientWidth;
+  //     _this.$store.state.screenHeight = document.documentElement.clientHeight;
+  //   };
+  // },
 };
 </script>
 <style lang="scss">

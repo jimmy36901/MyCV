@@ -21,6 +21,9 @@
     <section class="Homelist">
       <Homelist />
     </section>
+    <section>
+      <HomeHamburger />
+    </section>
   </div>
 </template>
 
@@ -35,6 +38,7 @@ import HomeSkill from "@/components/HomeSkill.vue";
 import HomeProjects from "@/components/HomeProjects.vue";
 import HomeContact from "@/components/HomeContact.vue";
 import Homelist from "@/components/Homelist.vue";
+import HomeHamburger from "@/components/HomeHamburger.vue";
 </script>
 <style lang="scss">
 .home {
@@ -81,6 +85,42 @@ import Homelist from "@/components/Homelist.vue";
     display: flex;
     justify-content: center;
     height: 20vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home {
+    .HomeAbout {
+      height: 110vh;
+    }
+    .HomeSkill {
+      height: 200vh;
+    }
+    .HomeProjects {
+      height: 180vh;
+    }
+    .Homelist {
+      display: block;
+      height: 25vh;
+      ul {
+        display: block;
+        list-style: none;
+        width: 100%;
+        // border: 1px solid black;
+        & li {
+          cursor: pointer;
+          transition: 0.3s;
+          line-height: 3rem;
+          text-align: center;
+          transition: 0.3s;
+          // border: 1px solid var(--secondary-gray-1);
+
+          &:hover {
+            transition: 0.3s;
+            color: var(--secondary-gray-1);
+          }
+        }
+      }
+    }
   }
 }
 </style>

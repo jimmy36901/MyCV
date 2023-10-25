@@ -29,4 +29,25 @@ export default {
     font-weight: 800;
   }
 }
+@media screen and (max-width: 420px) {
+  .HomePageTitle {
+    width: 80%;
+    height: 20vh; //
+    //   border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .subtitle {
+      font-size: 1rem;
+      color: var(--secondary-gray-1);
+    }
+    & .mainTitle {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+  }
+}
 </style>

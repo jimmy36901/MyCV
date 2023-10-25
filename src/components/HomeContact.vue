@@ -98,4 +98,16 @@ export default {
     }
   }
 }
+@media screen and (max-width: 420px) {
+  .HomeContact_Wrap {
+    & .HomeContact_items {
+      width: 90%;
+      & .HomeContact_text {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 </style>

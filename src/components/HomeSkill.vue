@@ -10,7 +10,7 @@
       <p class="HomeSkill_item_subtitle">{{ items.subtitle }}</p>
     </div>
   </div>
-  <HomeArrow @click="OpenProjects()" />
+  <HomeArrow @click="OpenProjects()" class="HomeArrow" />
 </template>
 <script>
 import HomePageTitle from "./HomePageTitle.vue";
@@ -71,6 +71,17 @@ export default {
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+@media screen and (max-width: 420px) {
+  .HomeArrow {
+    display: none;
+  }
+  .HomeSkill_item_wrap {
+    display: flex;
+    height: 180vh;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 </style>

@@ -1,18 +1,25 @@
 <template>
   <div class="headerWrap">
     <h1 class="headerWrap_title">Albert Liu</h1>
-    <Homelist />
+    <!-- <component :is="hamburger"></component> -->
+    <Homelist class="HeaderHomelist" />
+    <HomeHamburger class="HomeHamburger" />
   </div>
 </template>
 <script>
 import Homelist from "@/components/Homelist.vue";
+import HomeHamburger from "@/components/HomeHamburger.vue";
 export default {
   components: {
     Homelist,
+    HomeHamburger,
+  },
+  data() {
+    return {};
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .headerWrap {
   width: 70%;
   margin: auto;
@@ -42,6 +49,29 @@ export default {
         color: var(--secondary-gray-1);
       }
     }
+  }
+  & .HomeHamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .headerWrap {
+    align-items: center;
+    & .HeaderHomelist {
+      display: none;
+    }
+    & .HomeHamburger {
+      display: block;
+      & ul {
+        & li {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  #nav-icon3 {
+    margin: 0;
   }
 }
 </style>

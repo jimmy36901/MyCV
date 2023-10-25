@@ -98,4 +98,55 @@ export default {
     }
   }
 }
+@media screen and (max-width: 420px) {
+  .HomeInformation_wrap {
+    display: block;
+    & .Home_MyPic {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+    }
+    & .Home_MyPic_info {
+      width: 80%;
+      margin: auto;
+      padding: 1rem 0rem;
+      & .Home_greeting {
+        font-size: 1.5rem;
+        color: var(--secondary-gray-1);
+      }
+      & .Home_Myname {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+      }
+      & .Home_career {
+        font-size: 1rem;
+        color: var(--secondary-gray-1);
+      }
+      & .iconList {
+        //   border: 1px solid black;
+        a {
+          text-decoration: none;
+          // cursor: pointer;
+          &:nth-child(2) {
+            margin: 0rem 1rem;
+          }
+        }
+        & .iconBrand {
+          font-size: 2rem;
+          color: var(--primary-black);
+          transition: 0.3s;
+          transform: rotate(0deg);
+          &:hover {
+            color: var(--cozy-brown);
+            transform: rotate(15deg);
+            transition: 0.3s;
+          }
+        }
+        & .iconBrand:nth-child(2) {
+          margin: 0rem 1rem;
+        }
+      }
+    }
+  }
+}
 </style>

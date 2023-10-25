@@ -135,6 +135,86 @@ export default {
         color: var(--secondary-gray-1);
       }
     }
+    .HomeAbout_MyContent {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .HomeAbout_title {
+    width: 80%;
+    height: 20vh; //
+    //   border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .subtitle {
+      font-size: 1rem;
+      color: var(--secondary-gray-1);
+    }
+    & .mainTitle {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+  }
+  .HomeAbout_wrap {
+    display: block;
+    width: 90%;
+    height: 110vh;
+    & .HomeAbout_Pic {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+    }
+    & .HomeAbout_InfoWrap {
+      display: block;
+      width: 100%;
+      margin: auto;
+      & .HomeAbout_Info {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 2rem 0rem;
+        & .HomeAbout_icon {
+          font-size: 1.5rem;
+          padding: 1rem 0rem;
+        }
+        & .HomeAbout_Info_experience {
+          width: 45%;
+          margin: auto;
+          border: 1px solid var(--primary-black);
+          border-radius: 20px;
+          padding: 2rem 0rem;
+        }
+        & .HomeAbout_Info_education {
+          width: 45%;
+          margin: auto;
+          border: 1px solid var(--primary-black);
+          border-radius: 20px;
+          padding: 2rem 0rem;
+        }
+        & .HomeAbout_Info_experience_title {
+          font-size: 1rem;
+        }
+        & .HomeAbout_Info_experience_content {
+          font-size: 0.5rem;
+          color: var(--secondary-gray-1);
+        }
+        & .HomeAbout_Info_education_title {
+          font-size: 1rem;
+        }
+        & .HomeAboit_Info_education_content {
+          font-size: 0.5rem;
+          color: var(--secondary-gray-1);
+        }
+      }
+    }
+  }
+  .HomeArrow {
+    display: none;
   }
 }
 </style>

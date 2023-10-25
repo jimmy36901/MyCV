@@ -9,12 +9,12 @@
         <p class="visible">{{ items.addInfo }}</p>
       </div>
       <h1 class="HomeProject_title">{{ items.title }}</h1>
-      <a :href="items.link"
+      <a :href="items.link" target="_blank"
         ><button class="HomeProject_btn">{{ items.btn }}</button></a
       >
     </div>
   </div>
-  <HomeArrow @click="OpenContact()" />
+  <HomeArrow @click="OpenContact()" class="HomeArrow" />
 </template>
 <script>
 import HomePageTitle from "./HomePageTitle.vue";
@@ -23,6 +23,10 @@ export default {
   components: { HomePageTitle, HomeArrow },
   data() {
     return {
+      // showUp: window.innerWidth > 420,
+      // show: true,
+      // noShow: false,
+
       mainProjects: [
         {
           id: 1,
@@ -58,6 +62,11 @@ export default {
       // console.log(CONTACT);
     },
   },
+  // computed: {
+  //   showDisplay() {
+  //     return this.showUp ? this.show : this.noShow;
+  //   },
+  // },
 };
 </script>
 <style lang="scss">
@@ -137,6 +146,26 @@ export default {
         background-color: #353535;
         color: var(--pale-white);
         transition: 0.3s;
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .HomeArrow {
+    display: none;
+  }
+  .HomeProject_wrap {
+    display: block;
+    margin: auto;
+    height: 180vh;
+    & .HomeProject_item {
+      width: 80%;
+      margin: auto;
+      height: 400px;
+      margin-top: 1.5rem;
+      & .HomeProject_title {
+        font-size: 1.5rem;
+        padding: 1rem;
       }
     }
   }
