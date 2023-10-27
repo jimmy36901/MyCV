@@ -1,6 +1,6 @@
 <template>
   <div class="HomeInformation_wrap">
-    <div class="Home_MyPic" data-aos="fade-up" data-aos-duration="1000"></div>
+    <div class="Home_MyPic"></div>
     <section
       class="Home_MyPic_info"
       data-aos="fade-down"
@@ -138,12 +138,10 @@ export default {
         & .iconBrand {
           font-size: 2rem;
           color: var(--primary-black);
-          transition: 0.3s;
-          transform: rotate(0deg);
+          transition: 0s;
           &:hover {
-            color: var(--cozy-brown);
-            transform: rotate(15deg);
-            transition: 0.3s;
+            color: var(--primary-black);
+            transition: 0s;
           }
         }
         & .iconBrand:nth-child(2) {

@@ -7,14 +7,10 @@
   <div class="HomeAbout_wrap">
     <div
       class="HomeAbout_Pic"
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="1000"
     ></div>
-    <div
-      class="HomeAbout_InfoWrap"
-      data-aos="fade-left"
-      data-aos-duration="1000"
-    >
+    <div class="HomeAbout_InfoWrap" data-aos="fade-up" data-aos-duration="1000">
       <div class="HomeAbout_Info">
         <div class="HomeAbout_Info_experience">
           <font-awesome-icon :icon="['fas', 'award']" class="HomeAbout_icon" />

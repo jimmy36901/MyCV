@@ -69,10 +69,12 @@ export default {
     position: absolute;
     top: 35px;
     right: 20px;
+    z-index: 10;
     // display: none;
     & .HamburgerHomelist {
       display: block;
       width: 100%;
+      z-index: 10;
     }
   }
 }
