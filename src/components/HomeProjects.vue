@@ -1,7 +1,13 @@
 <template>
   <HomePageTitle subtitle="Browse My Recent" mainTitle="Projects" />
   <div class="HomeProject_wrap">
-    <div class="HomeProject_item" v-for="items in mainProjects" :key="items.id">
+    <div
+      class="HomeProject_item"
+      v-for="items in mainProjects"
+      :key="items.id"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div
         class="HomeProject_Pic"
         :style="`background-image: url(${items.url})`"
@@ -72,7 +78,7 @@ export default {
 <style lang="scss">
 .HomeProject_wrap {
   width: 80%;
-  height: 70vh;
+  // height: 70vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -157,11 +163,11 @@ export default {
   .HomeProject_wrap {
     display: block;
     margin: auto;
-    height: 180vh;
+    // height: 180vh;
     & .HomeProject_item {
       width: 80%;
       margin: auto;
-      height: 400px;
+      height: 450px;
       margin-top: 1.5rem;
       & .HomeProject_title {
         font-size: 1.5rem;

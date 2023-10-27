@@ -1,7 +1,11 @@
 <template>
   <div class="HomeInformation_wrap">
-    <div class="Home_MyPic"></div>
-    <section class="Home_MyPic_info">
+    <div class="Home_MyPic" data-aos="fade-up" data-aos-duration="1000"></div>
+    <section
+      class="Home_MyPic_info"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <p class="Home_greeting">{{ greeting }}</p>
       <h1 class="Home_Myname">{{ myName }}</h1>
       <p class="Home_career">{{ job }}</p>

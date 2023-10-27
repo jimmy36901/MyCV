@@ -6,6 +6,8 @@
       v-for="(items, index) in ContactList"
       @click="openDefaulteEmail(index)"
       key="items.id"
+      data-aos="fade-down"
+      data-aos-duration="1000"
     >
       <div class="HomeContact_icon">
         <font-awesome-icon :icon="[items.type, items.icon]" />
@@ -102,6 +104,12 @@ export default {
   .HomeContact_Wrap {
     & .HomeContact_items {
       width: 90%;
+      &:hover {
+        background-color: var(--pale-white);
+        transition: 0s;
+        transform: scale(1);
+        color: black;
+      }
       & .HomeContact_text {
         display: flex;
         align-items: center;
