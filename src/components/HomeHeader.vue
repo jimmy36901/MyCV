@@ -62,12 +62,6 @@ export default {
     }
     & .HomeHamburger {
       display: block;
-      & ul {
-        & li {
-          &:hover {
-          }
-        }
-      }
     }
   }
   #nav-icon3 {

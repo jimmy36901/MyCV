@@ -21,6 +21,9 @@
     <section class="Homelist">
       <Homelist />
     </section>
+    <section class="HomeCopyright">
+      <HomeCopyright />
+    </section>
   </div>
 </template>
 
@@ -36,6 +39,7 @@ import HomeProjects from "@/components/HomeProjects.vue";
 import HomeContact from "@/components/HomeContact.vue";
 import Homelist from "@/components/Homelist.vue";
 import HomeHamburger from "@/components/HomeHamburger.vue";
+import HomeCopyright from "@/components/HomeCopyright.vue";
 </script>
 <style lang="scss">
 .home {
@@ -83,7 +87,10 @@ import HomeHamburger from "@/components/HomeHamburger.vue";
   .Homelist {
     display: flex;
     justify-content: center;
-    height: 20vh;
+    height: 10vh;
+  }
+  .HomeCopyright {
+    display: block;
   }
 }
 @media screen and (max-width: 420px) {
@@ -100,6 +107,7 @@ import HomeHamburger from "@/components/HomeHamburger.vue";
     .Homelist {
       display: block;
       height: 25vh;
+      margin-bottom: 1.5rem;
       ul {
         display: block;
         list-style: none;

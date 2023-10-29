@@ -52,8 +52,8 @@ export default {
         },
         {
           id: 3,
-          url: require("@/assets/Projects/Assemble.png"),
-          title: "Assemble",
+          url: require("@/assets/Projects/Assemball.png"),
+          title: "Assemball",
           btn: "Live Demo",
           link: "https://tibamef2e.com/chd102/g4/",
           addInfo: "Vue (團專)",
@@ -162,7 +162,7 @@ export default {
   }
   .HomeProject_wrap {
     display: block;
-    margin: auto;
+    margin: 0rem auto 1rem;
     // height: 180vh;
     & .HomeProject_item {
       width: 80%;
@@ -172,6 +172,30 @@ export default {
       & .HomeProject_title {
         font-size: 1.5rem;
         padding: 1rem;
+      }
+      & .HomeProject_Pic {
+        & .visible {
+          display: none;
+        }
+      }
+      & .HomeProject_btn {
+        width: 30%;
+        text-align: center;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        border: 1px solid var(--secondary-gray-3);
+        border-radius: 2rem;
+        background-color: var(--pale-white);
+        transition: 0s;
+        &:hover {
+          background-color: var(--pale-white);
+          color: black;
+          transition: 0s;
+        }
       }
     }
   }
