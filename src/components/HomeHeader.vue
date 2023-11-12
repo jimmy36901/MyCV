@@ -54,7 +54,7 @@ export default {
     display: none;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .headerWrap {
     align-items: center;
     & .HeaderHomelist {

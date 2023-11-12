@@ -29,7 +29,7 @@ export default {
     font-weight: 800;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .HomePageTitle {
     width: 80%;
     height: 20vh; //

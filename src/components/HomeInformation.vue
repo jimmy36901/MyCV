@@ -102,7 +102,7 @@ export default {
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .HomeInformation_wrap {
     display: block;
     & .Home_MyPic {

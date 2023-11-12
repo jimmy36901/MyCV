@@ -100,7 +100,7 @@ export default {
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .HomeContact_Wrap {
     & .HomeContact_items {
       width: 90%;

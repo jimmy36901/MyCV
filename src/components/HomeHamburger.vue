@@ -98,7 +98,7 @@ export default {
     left: 50% !important;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   #nav-icon3 {
     margin: 0;
   }

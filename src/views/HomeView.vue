@@ -68,7 +68,7 @@ import HomeCopyright from "@/components/HomeCopyright.vue";
   }
   .HomeSkill {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     // border: 1px solid black;
     overflow: hidden;
   }
@@ -93,13 +93,13 @@ import HomeCopyright from "@/components/HomeCopyright.vue";
     display: block;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .home {
     .HomeAbout {
       // height: 150vh;
     }
     .HomeSkill {
-      height: 200vh;
+      // height: 200vh;
     }
     .HomeProjects {
       // height: 215vh;

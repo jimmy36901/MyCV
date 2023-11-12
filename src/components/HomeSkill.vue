@@ -24,6 +24,10 @@ export default {
         { id: 2, Title: "css", subtitle: "Intermediate" },
         { id: 3, Title: "Javascript", subtitle: "basic" },
         { id: 4, Title: "Vue", subtitle: "basic" },
+        { id: 5, Title: "Boostrap", subtitle: "basic" },
+        { id: 6, Title: "Ajax", subtitle: "Experienced" },
+        { id: 7, Title: "Git", subtitle: "Intermediate" },
+        { id: 7, Title: "SCSS/SASS", subtitle: "Experienced" },
       ],
     };
   },
@@ -38,15 +42,18 @@ export default {
 <style lang="scss">
 .HomeSkill_item_wrap {
   width: 80%;
-  height: 70vh;
-  margin: auto;
+  margin: 5rem auto;
   //   border: 1px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  // text-align: center;
+  // justify-content: center;
+  // align-items: center;
   & .HomeSkill_item_ball {
     width: 200px;
     height: 200px;
+    margin-bottom: 2rem;
     border: 1px solid black;
     border-radius: 50%;
     display: flex;
@@ -73,15 +80,15 @@ export default {
     transform: translateY(-20px);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .HomeArrow {
     display: none;
   }
   .HomeSkill_item_wrap {
-    display: flex;
-    height: 180vh;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+    margin: 0rem auto;
+    justify-items: center;
+    grid-template-columns: 1fr;
   }
 }
 </style>

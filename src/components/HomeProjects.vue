@@ -58,6 +58,22 @@ export default {
           link: "https://tibamef2e.com/chd102/g4/",
           addInfo: "Vue (團專)",
         },
+        {
+          id: 4,
+          url: require("@/assets/Projects/Pokemon.png"),
+          title: "PokemonDex",
+          btn: "Live Demo",
+          link: "https://jimmy36901.github.io/PokemonDex/",
+          addInfo: "Pokemon API",
+        },
+        {
+          id: 5,
+          url: require("@/assets/Projects/wheather.png"),
+          title: "Wheather",
+          btn: "Live Demo",
+          link: "https://jimmy36901.github.io/OpenWeather/",
+          addInfo: "Weather API",
+        },
       ],
     };
   },
@@ -80,11 +96,14 @@ export default {
   width: 80%;
   // height: 70vh;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
   // border: 1px solid black;
   & .HomeProject_item {
-    width: 30%;
     height: 500px;
     border: 1.5px solid var(--secondary-gray-3);
     display: flex;
@@ -93,6 +112,7 @@ export default {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 1rem;
     & .HomeProject_Pic {
       width: 80%;
       height: 300px;
@@ -156,7 +176,7 @@ export default {
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .HomeArrow {
     display: none;
   }

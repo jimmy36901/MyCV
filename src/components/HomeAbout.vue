@@ -47,7 +47,7 @@ export default {
       education_title: "Education",
       education_content: "明新科技大學<br>旅館管理系",
       MyContent:
-        "&emsp;&emsp;你好，我是劉忠騏，我的個性擅長與人溝通，在團體當中，儘管他人跟自己的想法不同，也可以坐下來跟他人好好討論，因為相信都是為了讓事情有一個更好的結果。<br><br>&emsp;&emsp;在因緣際會之下，接觸到程式碼，當第一次做自己的作品，並且一步一步朝著自己所設計好的樣子發展時，那種欣喜若狂的感覺，至今依然讓我意猶未盡。為了增進自己的技術果斷報名緯育Tibame前端工程師課程，使用HTML ,CSS(SCSS),JＳ ,Vue框架來做自己的作品集。<br><br>&emsp;&emsp;在作品集當中有使用Vue做的購物車網站（Cart），也有純HTML ,CSS ,JS做的花店網站（Fluer），以及團體專題共同使用Vue創作的棒球網站(ASSEMBLE)，在學習程式碼的過程中發現這是一個學海無涯的行業，必須與時俱進，才可以跟得上現在的科技發展。",
+        "&emsp;&emsp;你好，我是劉忠騏，我的個性擅長與人溝通，在團體當中，儘管他人跟自己的想法不同，也可以坐下來跟他人好好討論，因為相信都是為了讓事情有一個更好的結果。<br><br>&emsp;&emsp;在因緣際會之下，接觸到程式碼，當第一次做自己的作品，並且一步一步朝著自己所設計好的樣子發展時，那種欣喜若狂的感覺，至今依然讓我意猶未盡。為了增進自己的技術果斷報名緯育Tibame前端工程師課程，使用<span>HTML ,CSS(SCSS),JS ,Vue框架</span>來做自己的作品集。<br><br>&emsp;&emsp;在作品集當中有使用Vue做的購物車網站（Cart），也有純HTML ,CSS ,JS做的花店網站（Fluer），以及團體專題共同使用Vue創作的棒球網站(ASSEMBALL)，也有<span>使用API串接的神奇寶貝以及天氣預報</span>，在學習程式碼的過程中發現這是一個學海無涯的行業，必須與時俱進，才可以跟得上現在的科技發展。",
     };
   },
   methods: {
@@ -141,10 +141,16 @@ export default {
     }
     .HomeAbout_MyContent {
       text-align: left;
+      &::v-deep > span {
+        color: #c7604a;
+      }
     }
   }
 }
-@media screen and (max-width: 420px) {
+// >>> .HomeAbout_MyContent > span {
+//   color: red;
+// }
+@media screen and (max-width: 430px) {
   .HomeAbout_title {
     width: 80%;
     height: 20vh; //
